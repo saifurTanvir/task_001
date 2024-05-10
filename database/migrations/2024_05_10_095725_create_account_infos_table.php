@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained();
             $table->string('bank_name')->comment('card name, bank name or mfs name etc');
-            $table->string('current')->default('dollar');
+            $table->string('currency')->default('dollar');
             $table->integer('current_balance')->default(0);
             $table->tinyInteger('status')->default(1)->comment('is this account is active or not. 1 for active, 0 for inactive');
             $table->timestamps();
