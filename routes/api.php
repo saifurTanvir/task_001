@@ -16,8 +16,9 @@ use App\Http\Controllers\TransactionInfoController;
 */
 
 Route::prefix('v1')->group(function (){
-   Route::post('/make_payment', [TransactionController::class, 'make_transaction'])->name('make_transaction');
-   Route::post('/payment', [TransactionInfoController::class, 'transaction'])->name('make_transaction');
+   Route::post('/make_payment', [TransactionController::class, 'makeTransaction'])->name('make_transaction');
+   Route::post('/payment', [TransactionInfoController::class, 'transaction'])->name('transaction');
+   Route::post('/update_payment_info', [TransactionInfoController::class, 'updatePaymentInfo'])->name('update_payment_info');
 });
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
