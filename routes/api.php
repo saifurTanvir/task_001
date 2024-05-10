@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\V1\TransactionController;
+use App\Http\Controllers\TransactionInfoController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -16,6 +17,7 @@ use App\Http\Controllers\Api\V1\TransactionController;
 
 Route::prefix('v1')->group(function (){
    Route::post('/make_payment', [TransactionController::class, 'make_transaction'])->name('make_transaction');
+   Route::post('/payment', [TransactionInfoController::class, 'transaction'])->name('make_transaction');
 });
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {

@@ -13,6 +13,8 @@ class TransactionController extends Controller
 {
     use ApiResponse;
     public function make_transaction(MakeTransactionRequest $request, CurrencyInterface $currency){
+        $request->headers->set('X-Mock-Status', true);
+
         $userInfo = AccountInfo::where('user_id', $request->user_id)
                 ->where('currency', $currency->getCurrency())
                 -first();
