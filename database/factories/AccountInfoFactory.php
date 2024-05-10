@@ -6,7 +6,7 @@ use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\AccountInfo>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Api\v1\AccountInfo>
  */
 class AccountInfoFactory extends Factory
 {

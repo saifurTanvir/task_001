@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use App\Models\AccountInfo;
+use App\Models\Api\v1\AccountInfo;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 

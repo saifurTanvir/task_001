@@ -1,14 +1,15 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\V1;
 
-use App\Http\Requests\Api\v1\UpdatePaymentInfoRequest;
-use App\Models\TransactionInfo;
-use App\Trait\ApiResponse;
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Controller;
 use App\Http\Requests\Api\v1\TransactionRequest;
-use Illuminate\Http\Request;
+use App\Http\Requests\Api\v1\UpdatePaymentInfoRequest;
+use App\Models\Api\v1\TransactionInfo;
+use App\Trait\ApiResponse;
 use Exception;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 
 class TransactionInfoController extends Controller
 {

@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Api\V1;
 use App\Contruct\CurrencyInterface;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Api\v1\MakeTransactionRequest;
-use App\Models\AccountInfo;
+use App\Models\Api\v1\AccountInfo;
 use App\Trait\ApiResponse;
 use Exception;
 
